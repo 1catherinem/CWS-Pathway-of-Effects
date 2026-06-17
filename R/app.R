@@ -1,5 +1,4 @@
 # Load Data ------------------------------------------------------------
-
 #' Launch the Pathways of Effects Shiny UI
 #'
 #' Launches the tool. Note that the data must be in the current working
@@ -7,7 +6,7 @@
 #'
 #' @export
 #' @examplesIf interactive()
-#' poe_tool()
+#' 
 
 poe_tool <- function() {
   check_components()
@@ -97,6 +96,7 @@ poe_tool <- function() {
     #theme = bs_theme(version = 5, bootswatch = "materia"),
     # main application, add modules below in future to expand
     poeUI(
+  ui <- poeUI(
       id = "poe",
       act2Pres = act2Pres,
       activities = activities,
@@ -104,7 +104,8 @@ poe_tool <- function() {
       legColors = legColors,
       legText = legText,
       legSize = legSize
-    )
+      )
+    
 
   server <- function(input, output, session) {
     # main application, add modules in future to expand
@@ -119,5 +120,7 @@ poe_tool <- function() {
   }
 
   # Run Tool -------------------------------------------------------------
-  shinyApp(ui, server, options = list(host = "0.0.0.0", port = 8080), )
-}
+  shinyApp(ui = ui, server = server) #, options = list(host = "0.0.0.0", port = 8080), )
+} #end of poe_tool() function
+
+poe_tool() #calls the function above
