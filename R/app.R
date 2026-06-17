@@ -119,5 +119,7 @@ poe_tool <- function() {
   }
 
   # Run Tool -------------------------------------------------------------
-  shinyApp(ui, server, options = list(host = "0.0.0.0", port = 8080), )
-}
+  shinyApp(ui = ui, server = server) #, options = list(host = "0.0.0.0", port = 8080), ) #specifying ports and hosts can cause issues on government devices
+} #end of poe_tool() function
+
+poe_tool() #calls the function above so app.r can be run to launch/test the Shiny app
