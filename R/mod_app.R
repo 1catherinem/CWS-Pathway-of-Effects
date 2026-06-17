@@ -26,8 +26,7 @@ poeUI <- function(
 ) {
   # Setup -----------------------------------------------------------------
   ns <- NS(id)
-  js <- "
-  Shiny.addCustomMessageHandler('translateLabels', function(labels) {
+  js <- "Shiny.addCustomMessageHandler('translateLabels', function(labels) {
     for (let key in labels) {
       try {
         document.getElementById(key).innerHTML = labels[key]
@@ -51,12 +50,12 @@ poeUI <- function(
     #     style = "font-size: 2rem; font-weight: bold;"
     #   ),
     # ),
-    page_navbar(
+    bslib::page_navbar(
       title = span(id = ns("uiTitle"), htmlLabels[["uiTitle"]]),
       theme = poe_theme(),
       header = shinyjs::useShinyjs(),
       # Inputs -------------------------------------------
-      sidebar = sidebar(
+      sidebar = bslib::sidebar(
         width = "25%",
         title = tags$header(
           htmlLabels[["sidebarPathwaysLabel"]],
@@ -64,11 +63,11 @@ poeUI <- function(
           id = ns("sidebarPathwaysLabel")
         ),
 
-        accordion(
+        bslib::accordion(
           id = ns("ui"),
           open = c("a_vc", "a_m", "a_r"),
 
-          accordion_panel(
+          bslib::accordion_panel(
             title = span(
               id = ns("valuedComponentLabel"),
               htmlLabels[["valuedComponentLabel"]]
@@ -87,7 +86,7 @@ poeUI <- function(
             # Activities ---------------------------------------------
             uiOutput(outputId = ns("activitiesUi"))
           ),
-          accordion_panel(
+          bslib::accordion_panel(
             title = span(
               id = ns("mitigationMeasures"),
               htmlLabels[["mitigationMeasures"]]
@@ -95,7 +94,7 @@ poeUI <- function(
             value = "a_m",
             # Mitigation Measures ----------------------------------------
             uiOutput(ns("mitigationsUi")),
-            input_switch(
+            bslib::input_switch(
               id = ns("toggleMitigations"),
               label = span(
                 id = ns("toggleMitigationsLabel"),
@@ -104,7 +103,7 @@ poeUI <- function(
             )
           ),
           # Report -------------------------------------
-          accordion_panel(
+          bslib::accordion_panel(
             title = span(id = ns("report"), htmlLabels[["report"]]),
             value = "a_r",
             bslib::layout_column_wrap(
@@ -143,11 +142,11 @@ poeUI <- function(
         )
       ),
 
-      nav_panel(
+      bslib::nav_panel(
         title = tags$div("Interactive View", id = ns("tabInteractive")),
         # Custom Mitigations Sidebar -------------------------------------
-        layout_sidebar(
-          sidebar = sidebar(
+        bslib::layout_sidebar(
+          sidebar = bslib::sidebar(
             id = ns("sidebarMitigations"), # Required for toggling
             class = "pad-left",
             width = 350,
@@ -158,10 +157,10 @@ poeUI <- function(
               class = "sidebar-title",
               id = ns("sidebarMitigationsLabel")
             ),
-            accordion(
+            bslib::accordion(
               open = "add",
               multiple = TRUE,
-              accordion_panel(
+              bslib::accordion_panel(
                 title = span(
                   id = ns("helpMitigations"),
                   htmlLabels[["helpMitigations"]]
@@ -169,7 +168,7 @@ poeUI <- function(
                 value = "help",
                 uiOutput(ns("helpMitigations"))
               ),
-              accordion_panel(
+              bslib::accordion_panel(
                 title = span(
                   id = ns("addMitigations"),
                   htmlLabels[["addMitigations"]]
@@ -198,7 +197,7 @@ poeUI <- function(
                   )
                 )
               ),
-              accordion_panel(
+              bslib::accordion_panel(
                 title = span(
                   id = ns("removeMitigations"),
                   htmlLabels[["removeMitigations"]]
@@ -209,7 +208,7 @@ poeUI <- function(
             )
           ),
           # Diagrams ----------------------------------------
-          card(
+          bslib::card(
             visNetwork::visNetworkOutput(
               ns("pathwayInteractive"),
               width = "100%",
@@ -253,8 +252,8 @@ poeUI <- function(
       #     size = legSize
       #   )
       # ),
-      nav_spacer(),
-      nav_item(radioButtons(
+      bslib::nav_spacer(),
+      bslib::nav_item(radioButtons(
         inputId = ns("lang"),
         label = "",
         choices = c("English" = "en", "Fran\u00e7ais" = "fr"),
