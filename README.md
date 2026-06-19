@@ -50,12 +50,16 @@ poe_tool()
 
 To run the tool from the repository, follow these steps:
 
-1. Download the whole repository from https://github.com/1catherinem/CWS-Pathway-of-Effects (or the most updated version) and import your four XSLX files into the R folder.
-3. Create a new project file in RStudio inside the main pathway-of-effects folder.
-4. To install and load all necessary packages, run: pak::pak("marleyaikens/CWS-Pathway-of-Effects")
-5. Open the R folder and all of the R files inside in RStudio.
-6. Run each of the R files completely (may need to run some of the files multiple times, see troubleshooting notes 1 and 2), running app.R last. 
-7. If all goes well, the app will launch! (fingers crossed) (see troubleshooting note 3)
+1.	Download the whole repository from https://github.com/1catherinem/CWS-Pathway-of-Effects (or the most updated version) – Do this by clicking on the green “Code” button and clicking “Download ZIP.”
+2.	Extract the ZIP file.
+3.	Inside the Pathway-Of-Effects folder, import your four XSLX files into the R folder.
+4.	Open RStudio. 
+5.	File>New Project in RStudio, create a new project inside the main pathway-of-effects folder.
+6.	To install and load all necessary packages, run: pak::pak("marleyaikens/CWS-Pathway-of-Effects"). 
+7.	Open the R folder and all of the R files inside in RStudio.
+8.	Run each of the R files completely (may need to run some of the files multiple times, see troubleshooting notes 1 and 2), running app.R last. Install packages as needed when prompted by RStudio.
+9.	If all goes well, the app will launch! (fingers crossed) (see troubleshooting note 3)
+
 
 ### Troubleshooting the Advanced setup
 Note 1: If an error is thrown that looks like: "Error in X() : could not find function "X()" Called from: poe_tool()", then run all of the scripts again (You can also ctrl+f and search for that function in each of the files, then run the one with the "missing" function.). Look to see if the "missing" function is in your "Environment" pane on the right. Once you see it, run app.R again.
