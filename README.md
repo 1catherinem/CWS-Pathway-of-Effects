@@ -50,7 +50,7 @@ poe_tool()
 
 To run the tool from the repository, follow these steps:
 
-1. Download the whole repository from https://github.com/hmarleyaikens/CWS-Pathway-of-Effects (or the most updated version) and import your four XSLX files into the R folder.
+1. Download the whole repository from https://github.com/1catherinem/CWS-Pathway-of-Effects (or the most updated version) and import your four XSLX files into the R folder.
 3. Create a new project file in RStudio inside the main pathway-of-effects folder.
 4. To install and load all necessary packages, run: pak::pak("marleyaikens/CWS-Pathway-of-Effects")
 5. Open the R folder and all of the R files inside in RStudio.
