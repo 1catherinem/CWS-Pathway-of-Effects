@@ -54,12 +54,15 @@ To run the tool from the repository, follow these steps:
 3. Create a new project file in RStudio inside the main pathway-of-effects folder.
 4. To install and load all necessary packages, run: pak::pak("marleyaikens/CWS-Pathway-of-Effects")
 5. Open the R folder and all of the R files inside in RStudio.
-6. Run each of the R files completely, running app.R last. 
-7. If an error is thrown that looks like: "Error in X() : could not find function "X()" Called from: poe_tool()", then run all of the scripts again (You can also ctrl+f and search for that function in each of the files, then run the one with the "missing" function.)
-8. Look to see if the "missing" function is in your "Environment" pane on the right. Once you see it, run app.R again.
-9. If all goes well, the app will launch! (fingers crossed)
+6. Run each of the R files completely (may need to run some of the files multiple times, see troubleshooting notes 1 and 2), running app.R last. 
+7. If all goes well, the app will launch! (fingers crossed) (see troubleshooting note 3)
 
+### Troubleshooting the Advanced setup
+Note 1: If an error is thrown that looks like: "Error in X() : could not find function "X()" Called from: poe_tool()", then run all of the scripts again (You can also ctrl+f and search for that function in each of the files, then run the one with the "missing" function.). Look to see if the "missing" function is in your "Environment" pane on the right. Once you see it, run app.R again.
 
+Note 2: If utils.R throws errors, run the other R files first, then run utils.R. If utils.R still throws errors, run it again until it doesn't.
+
+Note 3: If App.R is run but opens an RStudio window with no contents, click on "View in browser" near the top of the window. 
 
 ### Basic Workflow
 
