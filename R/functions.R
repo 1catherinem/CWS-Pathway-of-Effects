@@ -167,7 +167,7 @@ data_location <- function(file_name, dir = NULL) {
   }
 
   if (!file.exists(path)) {
-    dir <- "."
+    dir <- "../inst/extdata"
     path <- file.path(dir, file_name)
     if (!file.exists(path)) {
       stop(
