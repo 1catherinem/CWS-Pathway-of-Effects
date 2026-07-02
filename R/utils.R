@@ -235,7 +235,7 @@ mitigated_colours <- function() {
 #' @noRd
 
 poe_theme <- function() {
-  bs_theme(
+  bslib::bs_theme(
     version = 5,
     #bootswatch = "materia",
     "success" = "#5a8e51ff",
@@ -244,7 +244,7 @@ poe_theme <- function() {
     "btn-padding-x-sm" = "0.25rem",
     "btn-font-size-sm" = "0.75rem"
   ) |>
-    bs_add_rules(
+    bslib::bs_add_rules(
       "
       /* Custom rules */
       g > .node {
