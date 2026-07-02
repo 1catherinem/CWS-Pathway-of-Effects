@@ -115,7 +115,7 @@ poe_tool <- function() {
   }
 
   # Run Tool -------------------------------------------------------------
-  shinyApp(ui = ui, server = server) #, options = list(host = "0.0.0.0", port = 8080), )
+  shinyApp(ui = ui, server = server) #, options = list(host = "0.0.0.0", port = 8080), ) #running on a custom port number can cause issues on govt devices
 } #end of poe_tool() function
 
-#poe_tool() #calls the function above, uncomment if running manually
+#poe_tool() #calls the function above. Uncomment poe_tool() if running manually!
