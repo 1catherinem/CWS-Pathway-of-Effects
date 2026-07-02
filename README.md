@@ -8,6 +8,11 @@
 
 The `poe` package provides an interactive Shiny User Interface for exploring Pathways of Effects (PoE) diagram models developed by the Canadian Wildlife Service (CWS).
 
+## Requirements
+
+- R \>= 4.1.0
+- Quarto (for report generation, installed by default with RStudio)
+
 ## Installation
 
 You can install poe from GitHub.
@@ -29,12 +34,6 @@ Try installing again:
 # install.packages("pak")
 pak::pak("1catherinem/CWS-Pathway-of-Effects")
 ```
-
-## Requirements
-
-- R \>= 4.1.0
-- Quarto (for report generation, installed by default with RStudio)
-
 ## Getting Started
 
 Create an RStudio project and place the custom excel data files in this folder.
