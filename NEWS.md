@@ -1,4 +1,4 @@
-# poe 0.2.0
+# poe 0.3.0
 
 * Convert to package 
 * Add ability to add pathway mitigations

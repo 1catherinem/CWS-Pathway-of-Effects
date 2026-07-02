@@ -179,3 +179,4 @@ report_tables_print <- function(tbls) {
     cat("\n\n```\n\n")
   }
 }
+

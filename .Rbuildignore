@@ -6,3 +6,5 @@
 ^\.vscode$
 ^air\.toml$
 ^custom_data.md$
+^.*\.Rproj$
+^\.Rproj\.user$

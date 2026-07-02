@@ -91,11 +91,6 @@ poe_tool <- function() {
   )
 
   # UI Structure -------------------------------------------------------
-  ui <- #page_fillable(
-    #title = "CWS",
-    #theme = bs_theme(version = 5, bootswatch = "materia"),
-    # main application, add modules below in future to expand
-    poeUI(
   ui <- poeUI(
       id = "poe",
       act2Pres = act2Pres,
@@ -123,4 +118,4 @@ poe_tool <- function() {
   shinyApp(ui = ui, server = server) #, options = list(host = "0.0.0.0", port = 8080), )
 } #end of poe_tool() function
 
-poe_tool() #calls the function above
+#poe_tool() #calls the function above, uncomment if running manually

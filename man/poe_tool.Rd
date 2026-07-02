@@ -2,16 +2,11 @@
 % Please edit documentation in R/app.R
 \name{poe_tool}
 \alias{poe_tool}
-\title{Launch the Pathways of Effect Shiny UI}
+\title{Launch the Pathways of Effects Shiny UI}
 \usage{
 poe_tool()
 }
 \description{
 Launches the tool. Note that the data must be in the current working
 directory for the tool to work.
-}
-\examples{
-\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
-poe_tool()
-\dontshow{\}) # examplesIf}
 }
