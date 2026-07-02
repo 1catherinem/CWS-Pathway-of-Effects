@@ -14,7 +14,7 @@ You can install poe from GitHub.
 
 ``` r
 # install.packages("pak")
-pak::pak("marleyaikens/CWS-Pathway-of-Effects")
+pak::pak("1catherinem/CWS-Pathway-of-Effects")
 ```
 
 **On Windows**
@@ -27,7 +27,7 @@ Try installing again:
 
 ``` r
 # install.packages("pak")
-pak::pak("marleyaikens/CWS-Pathway-of-Effects")
+pak::pak("1catherinem/CWS-Pathway-of-Effects")
 ```
 
 ## Requirements
@@ -37,7 +37,7 @@ pak::pak("marleyaikens/CWS-Pathway-of-Effects")
 
 ## Getting Started
 
-Create an RStudio project and place the custom data files in this folder.
+Create an RStudio project and place the custom excel data files in this folder.
 
 Then launch the Shiny UI with `poe_tool()`:
 
