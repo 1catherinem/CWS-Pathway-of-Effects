@@ -167,7 +167,7 @@ data_location <- function(file_name, dir = NULL) {
   }
 
   if (!file.exists(path)) {
-    dir <- "../inst/extdata"
+    dir <- system.file("extdata", file_name, package = "poe")
     path <- file.path(dir, file_name)
     if (!file.exists(path)) {
       stop(
