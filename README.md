@@ -17,8 +17,7 @@ The `poe` package provides an interactive Shiny User Interface for exploring Pat
 
 1. Open RStudio.
 2. Create an RStudio project
-3. Place the custom excel data files in the project folder.
-4. Install the poe package using the code below:
+3. Install the poe package using the code below:
 
 ``` r
 # install.packages("pak")
