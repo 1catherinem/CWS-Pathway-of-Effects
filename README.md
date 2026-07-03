@@ -13,7 +13,7 @@ The `poe` package provides an interactive Shiny User Interface for exploring Pat
 - R \>= 4.1.0
 - Quarto (for report generation, installed by default with RStudio)
 
-## Installation
+## Quick installation
 
 You can install poe from GitHub.
 
