@@ -24,7 +24,7 @@ pak::pak("1catherinem/CWS-Pathway-of-Effects")
 
 **On Windows**
 
-On Windows you may need to install RTools. If you try the above code but get a message to this effect download and install [RTools](https://cran.r-project.org/bin/windows/Rtools/) for your R version. You can find your R version by looking at the first line in the R Console when you start RStudio.
+On Windows you may need to install RTools. If you try the above code but get a message to this effect download and install [RTools](https://cran.r-project.org/bin/windows/Rtools/) for your R version. You can find your R version by looking at the first line in the R Console when you start RStudio (if a govt user, likely R 4.4.x).
 
 Close RStudio and restart.
 
@@ -44,6 +44,7 @@ Then launch the Shiny UI with `poe_tool()`:
 library(poe)
 poe_tool()
 ```
+Troubleshooting note: If poe_tool() is run and the error message "Template content not set during policy execution" appears, close RStudio, then open it and the project again and run the tool once more. A restart _should_ fix this error.
 
 ## Advanced setup: Run from R files
 
