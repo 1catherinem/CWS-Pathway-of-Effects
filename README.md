@@ -15,36 +15,31 @@ The `poe` package provides an interactive Shiny User Interface for exploring Pat
 
 ## Quick installation
 
-You can install poe from GitHub.
+1. Open RStudio.
+2. Create an RStudio project
+3. Place the custom excel data files in the project folder.
+4. Install the poe package using the code below:
 
 ``` r
 # install.packages("pak")
 pak::pak("1catherinem/CWS-Pathway-of-Effects")
 ```
-
-**On Windows**
-
-On Windows you may need to install RTools. If you try the above code but get a message to this effect download and install [RTools](https://cran.r-project.org/bin/windows/Rtools/) for your R version. You can find your R version by looking at the first line in the R Console when you start RStudio (if a govt user, likely R 4.4.x).
-
-Close RStudio and restart.
-
-Try installing again:
-
-``` r
-# install.packages("pak")
-pak::pak("1catherinem/CWS-Pathway-of-Effects")
-```
-## Getting Started
-
-Create an RStudio project and place the custom excel data files in this folder.
 
 Then launch the Shiny UI with `poe_tool()`:
 
 ``` r
-library(poe)
-poe_tool()
+poe::poe_tool()
 ```
-Troubleshooting note: If poe_tool() is run and the error message "Template content not set during policy execution" appears, close RStudio, then open it and the project again and run the tool once more. A restart _should_ fix this error.
+
+Troubleshooting note: If poe_tool() is run and the error message "Template content not set during policy execution" appears, close RStudio, then open it and the project again and run the tool using the code above once more. A restart _should_ fix this error.
+
+**On Windows**
+
+On Windows, you will need to install RTools. If you try the above code but get a message that the package cannot be built without RTools, you must download and install [RTools](https://cran.r-project.org/bin/windows/Rtools/) for your R version. You can find your R version by looking at the first line in the R Console when you start RStudio (if a govt user, likely R 4.4.x).
+
+Close RStudio and restart.
+
+Try installing again.
 
 ## Advanced setup: Run from R files
 
