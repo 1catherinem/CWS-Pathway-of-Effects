@@ -17,11 +17,18 @@ The `poe` package provides an interactive Shiny User Interface for exploring Pat
 
 1. Open RStudio.
 2. Create an RStudio project
-3. Place the custom excel data files in the project folder.
-4. Install the poe package using the code below:
+3. Install the poe package using the code below:
+
+Install/load the package installer:
 
 ``` r
-# install.packages("pak")
+install.packages("pak")
+# or, if pak is already installed
+library(pak)
+``` 
+Now install the poe package from the GitHub using pak:
+
+``` r
 pak::pak("1catherinem/CWS-Pathway-of-Effects")
 ```
 

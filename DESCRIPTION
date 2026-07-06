@@ -1,6 +1,6 @@
 Package: poe
 Title: CWS Shiny Explorer for Pathways of Effects Diagram models
-Version: 0.3.2
+Version: 0.3.3
 Authors@R: c(
     person("Steffi", "LaZerte", email = "sel@steffilazerte.ca", role = c("aut", "cre")),
     person("Thomas", "Roh", email = "thomas.roh@delveds.com", role = c("aut")),
