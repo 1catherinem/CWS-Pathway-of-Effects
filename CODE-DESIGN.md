@@ -12,7 +12,7 @@ This is primarily meant for future *developers* of this package.
   - pathways.xlsx
   - translations.xlsx
   - ui_labels.xlsx
-- In future, all could be bundled with the package in `inst/extdata`, but currently, to allow easier testing of changes, all but `ui_labels.xlsx` will be provided to users and the `read_sheets()` function will first look in `extdata` and will *then* look in the working directory.
+- All of which are now contained in inst/extdata folder.
 - Developers working on this package may find it easier to store these files all
   in the inst/extdata, but to add exclusions to .git/info/exclude to prevent them 
   from being pushed to GitHub (just don't forget to remove these exclusions when 
