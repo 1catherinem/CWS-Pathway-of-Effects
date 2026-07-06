@@ -67,7 +67,7 @@ create_report <- function(
     "mitigations.xlsx",
     "pathways.xlsx" # Do not require sectors.xlsx
   )) {
-    file.copy(data_location(d), file.path(tempdir(), d))
+    file.copy(system.file("extdata",d, package="poe"), file.path(tempdir(), d)) #system.file("extdata" was previously data_location(d)
     if (!file.exists(file.path(tempdir(), d))) {
       stop(
         "Cannot move",
