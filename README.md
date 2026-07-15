@@ -10,8 +10,9 @@ The `poe` package provides an interactive Shiny User Interface for exploring Pat
 
 ## Requirements
 
-- R \>= 4.1.0
-- Quarto (for report generation, installed by default with RStudio)
+- R \>= 4.1.
+- RTools (to build/install the package)
+- RStudio (Due to Quarto integration, which is used for generating reports)
 
 ## Quick installation
 
@@ -19,14 +20,12 @@ The `poe` package provides an interactive Shiny User Interface for exploring Pat
 2. Create an RStudio project
 3. Install the poe package using the code below:
 
-Install/load the package installer:
+Install the package installer (only needs to be done once):
 
 ``` r
 install.packages("pak")
-# or, if pak is already installed
-library(pak)
 ``` 
-Now install the poe package from the GitHub using pak:
+Now install the poe package from the GitHub using pak (Only needs to be done once. Must be done again to apply any updates):
 
 ``` r
 pak::pak("1catherinem/CWS-Pathway-of-Effects")
@@ -37,7 +36,6 @@ Then launch the Shiny UI with `poe_tool()`:
 ``` r
 poe::poe_tool()
 ```
-
 Troubleshooting note: If poe_tool() is run and the error message "Template content not set during policy execution" appears, close RStudio, then open it and the project again and run the tool using the code above once more. A restart _should_ fix this error.
 
 **On Windows**
@@ -48,16 +46,23 @@ Close RStudio and restart.
 
 Try installing again.
 
+## Quick Launch 
+
+With pak and a version of the poe package installed, launching is easy! Simply open RStudio and type:
+
+``` r
+poe::poe_tool()
+```
+
 ## Advanced setup: Run from R files
 
-To run the tool from the repository, follow these steps:
+To run the tool from this repository, follow these steps:
 
 1.	Download the whole repository from https://github.com/1catherinem/CWS-Pathway-of-Effects (or the most updated version) – Do this by clicking on the green “Code” button and clicking “Download ZIP.”
 2.	Extract the ZIP file.
-3.	Inside the Pathway-Of-Effects folder, import your four XSLX files into the R folder.
-4.	Open RStudio. 
-5.	File>New Project in RStudio, create a new project inside the main pathway-of-effects folder.
-6.	To install and load all necessary packages, run: pak::pak("marleyaikens/CWS-Pathway-of-Effects"). 
+3.	Inside the Pathway-Of-Effects folder, import your four XSLX files into the inst/extdata folder.
+5.	File > New Project in RStudio, create a new project inside the main pathway-of-effects folder.
+6.	To install and load all necessary packages, run: pak::pak("1catherinem/CWS-Pathway-of-Effects"). 
 7.	Open the R folder and all of the R files inside in RStudio.
 8.	Run each of the R files completely (may need to run some of the files multiple times, see troubleshooting notes 1 and 2), running app.R last. Install packages as needed when prompted by RStudio.
 9.	If all goes well, the app will launch! (fingers crossed) (see troubleshooting note 3)
@@ -68,7 +73,7 @@ Note 1: If an error is thrown that looks like: "Error in X() : could not find fu
 
 Note 2: If utils.R throws errors, run the other R files first, then run utils.R. If utils.R still throws errors, run it again until it doesn't.
 
-Note 3: If App.R is run but opens an RStudio window with no contents, click on "View in browser" near the top of the window. 
+Note 3: If App.R is run but opens an RStudio window with no contents, click on "View in browser" near the top of the window. The poe app is compatible best with browsers like Edge.
 
 
 ### Basic Workflow
