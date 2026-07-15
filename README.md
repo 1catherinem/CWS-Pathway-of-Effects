@@ -14,7 +14,10 @@ The `poe` package provides an interactive Shiny User Interface for exploring Pat
 - RTools (to build/install the package)
 - RStudio (Due to Quarto integration, which is used for generating reports)
 
-## Quick installation
+## Installation (For those with no experience in R)
+Please follow the step-by-step instructions outlined in the [Pathway of Effects Setup Deck.](https://github.com/1catherinem/CWS-Pathway-of-Effects/blob/main/PoE_Automation_Setup_Deck_V2.pdf)
+
+## Quick installation (for current R-users)
 
 1. Open RStudio.
 2. Create an RStudio project
