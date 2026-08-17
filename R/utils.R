@@ -206,13 +206,13 @@ check_components <- function(
 
 node_colours <- function() {
   c(
-    "component" = "#88bde9", # Valued Component
+    "component" = "#B5DEFF", # Valued Component
     "stressor" = "#fee599", # Stressors/Pressures
-    "effect" = "#f2f2f2", # Effect
+    "effect" = "#F9F9F9", # Effect
     "contravention" = "#f06c6c", # Potential Contravention of Legislation and/or Regulations
-    "habitat" = "#9dbb61", # Habitat/Wetland Availability and Distribution
-    "quality" = "#f59d56", # Fitness, Reproduction, and Mortality / Wetland Quality and Function
-    "population" = "#7e649e"
+    "habitat" = "#BAA1FF", # Habitat/Wetland Availability and Distribution
+    "quality" = "#BAA1FF", # Fitness, Reproduction, and Mortality / Wetland Quality and Function
+    "population" = "#BAA1FF"
   )
 }
 

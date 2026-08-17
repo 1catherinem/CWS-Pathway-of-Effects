@@ -37,10 +37,10 @@ poe_tool <- function() {
   legText <- c(
     "Valued Component",
     "Stressors/pressures associated with Activities/Components selected by user",
-    "Potential Contravention of Legislation and/or Regulations"
+    "Potential Contravention of Legislation and/or Regulations","Endpoints"
   )
-  legColors <- c("#88bde9", "#fee599", "#f06c6c")
-  legSize <- 40
+  legColors <- c("#B5DEFF", "#fee599", "#f06c6c", "#BAA1FF")
+  legSize <- 50
 
   # Headers/labels that need to be translated later
   # - The name refers to the element id, hence the two 'applies'
@@ -82,12 +82,15 @@ poe_tool <- function() {
     leg1Text1 = legText[1],
     leg1Text2 = legText[2],
     leg1Text3 = legText[3],
+    leg1Text4 = legText[4],
     leg2Text1 = legText[1],
     leg2Text2 = legText[2],
     leg2Text3 = legText[3],
+    leg2Text4 = legText[4],
     leg3Text1 = legText[1],
     leg3Text2 = legText[2],
-    leg3Text3 = legText[3]
+    leg3Text3 = legText[3],
+    leg3Text4 = legText[4]
   )
 
   # UI Structure -------------------------------------------------------
