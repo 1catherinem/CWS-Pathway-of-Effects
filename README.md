@@ -64,6 +64,7 @@ To run the tool from this repository, follow these steps:
 1.	Download the whole repository from https://github.com/1catherinem/CWS-Pathway-of-Effects (or the most updated version) – Do this by clicking on the green “Code” button and clicking “Download ZIP.”
 2.	Extract the ZIP file.
 3.	Inside the Pathway-Of-Effects folder, import your four XSLX files into the inst/extdata folder.
+      NOTE: Change the directory path in Functions.R to point to the local file and not the package. 
 5.	File > New Project in RStudio, create a new project inside the main pathway-of-effects folder.
 6.	To install and load all necessary packages, run: pak::pak("1catherinem/CWS-Pathway-of-Effects"). 
 7.	Open the R folder and all of the R files inside in RStudio.
